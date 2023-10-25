@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+    <!--font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@10..48,600&family=Montserrat&family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!--Bootstrap icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/Custom.css" />
+
+    <!-- css data tables-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" />
+  </head>
+  <body>
+    <!-- navbar-->
+    <nav class="navbar navbar-expand-lg bg-primary mb-3 navbar-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">CV.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="cv.html">Template</a>
+            </li>
+          </ul>
+          <div class="btn-group">
+            <button class="btn btn-secondary btn-sm text-dark" type="button">Epriya Mecca Siti Alikhah</button>
+            <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#"><i class="bi bi-person-circle me-2"></i>Profile</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Setting</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-danger fw-bold" href="Dashboard.html"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end-->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb ps-3 fs-6">
+              <li class="breadcrumb-item"><a class="link-primary text-decoration-none" href="index.html">Dashboard</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Data Curriculum Vitae</li>
+              <li class="breadcrumb-item"><a class="link-primary text-decoration-none" href="detail-user.html">Detail User</a></li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="row border rounded-3 bg-white shadow box-area overflow-hidden 1">
+          <div class="col-md-6 left-box p-0">
+            <img src="img/login.png" alt="Foto Profil" style="width: 100%; min-height: 100%; object-fit: cover" />
+          </div>
+          <div class="col-md-6 right-box">
+            <div class="row align-items-center text-light">
+              <div class="header-text mb-4">
+                <h2>Hello, Again</h2>
+                <p>We are happy to have you back</p>
+                <div class="input-grup mb-3">
+                  <input type="type" class="form-control form-control-lg bg-light fs-6" placeholder="Email addres" />
+                </div>
+                <div class="input-grup mb-1">
+                  <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password" />
+                </div>
+                <div class="input-grup mb-3 d-flex justify-content-between">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="form-check" />
+                    <label for="formcheck" class="form-check-label text-primary text-light"><small>Remember Me</small></label>
+                  </div>
+                  <div class="forgot">
+                    <small><a href="#">Forgot Password?</a></small>
+                  </div>
+                </div>
+                <div class="input-login mb-3">
+                  <button class="btn btn-lg btn-primary w-100 fs-6">Login</button>
+                </div>
+                <div class="input-login mb-3">
+                  <button class="btn btn-lg btn-secondary w-100 fs-6"><img src="img/google.png" style="width: 35px" class="me-1" /><small>Sign In With Google</small></button>
+                </div>
+                <div class="row text-center">
+                  <small>Don't have account? <a href="#">Sign Up</a></small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Data tables js-->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+      new DataTable("#example");
+    </script>
+
+    <!--BreadCrumb End-->
+    <!--JavaScript-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
